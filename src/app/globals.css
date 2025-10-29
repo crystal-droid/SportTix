@@ -1,26 +1,535 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: auto;
+}
+
+
+/* Start of Navbar */
+
+.Navbar {
+  width: 98vw;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+  height: 4rem;
+  background-color: rgb(1, 1, 63);
+}
+
+.Navbar-div {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.Navbar-p {
+  border: 2px solid #f97316;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f97316;
+  font-weight: bolder;
+  color: #ffffff;
+  border-radius: 7px;
+  width: 28%;
+  height: 2.4rem;
+  text-align: center;
+}
+
+.Navbar-h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: bolder;
+  color: #ffffff;
+  height: 2.4rem;
+  text-align: center;
+}
+
+/* End of Navbar */
+
+
+/* start for RotoWireBanner button */
+
+.RotoWireBanner {
+  height: 3rem;
+  width: 20rem;
+  /* margin-left: 33rem; */
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+
+/* end for RotoWireBanner button */
+
+
+/* start for home section1 */
+
+.Home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(66deg, rgb(0, 0, 0), blue);
+  height: 37rem;
+  width: 98vw;
+}
+
+.Home1 {
+  height: 27rem;
+  width: 53%;
+}
+
+.Home-div-p-span {
+  padding: 12px;
+  font-size: 66px;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  width: 100%;
+}
+
+.Home-div-span {
+  color: #fa7c23;
+}
+
+.Home-div-p {
+  padding: 12px;
+  font-size: 18px;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  color: #e0e0e0;
+  width: 100%;
+}
+
+.Home-div-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 26rem;
+  height: 4rem;
+}
+
+.Home-div-button1 {
+  color: #ffffff;
+  height: 2.5rem;
+  width: 12rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  border: 2px solid #f06c0d;
+  background-color: #f06c0d;
+}
+
+.Home-div-button1:hover {
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #d35800;
+}
+
+.Home-div-button2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 2.5rem;
+  width: 12rem;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.Home-div-button2:hover {
+  color: #000000;
+  cursor: pointer;
+  background-color: rgb(42, 42, 85);
+}
+
+.Home-div-button-Search {
+  width: 6rem;
+}
+
+.Home-div-button-Search:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+.Home2 {
+  height: 24rem;
+  border-radius: 7px;
+  background-image: linear-gradient(100deg, rgb(0, 0, 0), blue, blue);
+  width: 45%;
+}
+
+.Home2-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 5rem;
+  color: white;
+}
+
+.Home2-p {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 18px;
+  background-color: #f97316;
+  width: 10rem;
+}
+
+.Home2-h1 {
+  width: 18rem;
+  font-size: 21px;
+  font-weight: bolder;
+}
+
+.Home2-div-ps {
+  width: 24rem;
+  margin-top: 12px;
+  margin-left: 12px;
+  color: rgb(206, 206, 206);
+}
+
+.Home2-div-p {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+}
+
+.Home2-div-buttons {
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.Home2-divs-p {
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+}
+
+.Home2-div-button2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 2.3rem;
+  width: 22rem;
+  border-radius: 5px;
+  background-color: #f97316;
+  color: #ffffff;
+}
+
+.Home2-div-button2:hover {
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #d66717;
+}
+
+.Home-div-button-LearnMore {
+  width: 6rem;
+}
+
+.Home-div-button-LearnMore:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+/* end for Home section1 */
+
+
+/* start for Home section 3 */
+
+.Home3 {
+  border: 2px solid springgreen;
+  height: 12rem;
+}
+
+
+/* start for trending games */
+
+.Home-section1 {
+  background-color: rgb(251, 248, 248);
+  height: 55rem;
+  width: 98vw;
+}
+
+.Home-section1-div {
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Home-section1-h1 {
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.Home-section1-p {
+  color: #6a6767;
+}
+
+
+.Home-section2-divs {
+  height: 13rem;
+  border: 2px solid red;
+}
+
+.Home-section-div2 {
+  border: 2px solid rgb(34, 178, 34);
+}
+
+.Home-Section1-div {
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Home-section1-div-h1 {
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.Home-section1-div-p {
+  color: #6a6767;
+}
+
+.Home-Section2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Home-Section2-div {
+  width: 33%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.Home-Section3-star-div {
+  width: 33%;
+  height: auto;
+  background-color: rgb(237, 236, 236);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  margin-top: 5rem;
+  border-radius: 5px;
+}
+
+
+.Home-section2-div-h1 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.Home-section2-div-p {
+  font-size: 15px;
+  color: #6a6767;
+}
+
+
+.Home-section3-divs {
+  height: 21rem;
+  background-color: #f7f7f7;
+}
+
+.Home-Section3 {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid rgb(124, 205, 92);
+}
+
+.Home-Section3-div {
+  border: 2px solid rgb(0, 0, 0);
+  width: 33%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+}
+
+.Home-section3-div-h1 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.Home-section3-div-p {
+  font-size: 15px;
+  color: #6a6767;
+}
+
+/* end for Home section3 */
+
+
+
+/* start for Games */
+
+.Games-Section1 {
+  background-image: linear-gradient(66deg, rgb(0, 0, 0), blue);
+  color: white;
+  height: auto;
+  width: 98vw;
+}
+
+.Upcoming {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Upcoming-p {
+  padding: 12px;
+  font-size: 32px;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 70px;
+  width: 30%;
+}
+
+.Upcoming-h1 {
+  font-size: 17px;
+  height: 35px;
+  color: #b2b2b2;
+  width: 50%;
+}
+
+.SearchBar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.Upcoming-button {
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* end for Games */
+
+
+
+.Sports-Section1 {
+  background-image: linear-gradient(66deg, rgb(0, 0, 0), blue);
+  color: white;
+  height: 99rem;
+  width: 98vw;
+}
+
+
+.Categories {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Categories-p {
+  padding: 12px;
+  font-size: 32px;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 70px;
+  width: 30%;
+}
+
+.Categories-h1 {
+  font-size: 17px;
+  height: 35px;
+  color: #d7d7d7;
+  width: 54%;
+}
+
+.For-api {
+  height: 72rem;
+}
+
+.Booking { 
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.booking { 
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Booking-p {
+  padding: 12px;
+  font-size: 32px;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 80px;
+  width: 80%;
+}
+
+
+.About-Section1 {
+  background-image: linear-gradient(66deg, rgb(0, 0, 0), blue);
+  color: white;
+  height: 114rem;
+  width: 98vw;
+}
+
+.About-p {
+  padding: 12px;
+  font-size: 60px;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* height: 80px; */
+  width: 100%;
+}
+
+.activeforms {
+  height: auto;
 }
